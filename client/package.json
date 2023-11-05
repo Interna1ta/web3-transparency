@@ -1,0 +1,26 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.16",
+    "bootstrap": "^5.2.3",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "ethers": "^5.7.2",
+    "next": "13.0.5",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.6.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "18.2.0",
+    "web3modal": "^1.9.10"
+  }
+}
