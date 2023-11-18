@@ -118,7 +118,9 @@ describe("TransparencySC", function () {
     const tx = await transparency.connect(customer).buy(8754, { value: price });
 
     const receipt = await tx.wait();
-    const gasSpent = await receipt.gasUsed.mul(receipt.effectiveGasPrice);
+    console.log('effectiveGasPrice', receipt.effectiveGasPrice);
+    const gasSpent = BigInt(receipt.cumulativeGasUsed) * BigInt(receipt.effectiveGasPrice);
+    // const gasSpent = await receipt.gasUsed.mul(receipt.effectiveGasPrice);
     // const gasSpent = await receipt.gasUsed * parseFloat(utils.toWei(receipt.effectiveGasPrice, 'gwei'));
     // const gasSpent = await ethers.BigNumber.from(receipt.gasUsed).mul(receipt.effectiveGasPrice);
 

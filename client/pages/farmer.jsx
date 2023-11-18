@@ -1,5 +1,7 @@
 import { Contract, utils } from "ethers";
 import React, { useEffect, useState } from "react";
+import Image from 'next/image'
+
 import { NFT_CONTRACT_ADDRESS, ABI } from "../constants";
 // styles and html components
 import Form from 'react-bootstrap/Form';
@@ -155,7 +157,7 @@ export default function Farmer(props) {
     <div>
       <div className={styles.main}>
         <div className={styles.title}>
-          <img width={100} height={100} src="/farmerColor.png" alt="farmer icon" />
+          <Image width={100} height={100} src="/farmerColor.png" alt="farmer icon" />
           <h2>Farmer User Account</h2>
         </div>
 
@@ -175,7 +177,7 @@ export default function Farmer(props) {
             {loading ?
               <tr>
                 <td style={{ '--bs-table-accent-bg': 'white', 'textAlign': 'center' }} colSpan='6'>
-                  <img src="./loading.gif" alt="loading..." />
+                  <Image src="./loading.gif" alt="loading..." />
                   <p className={styles.p_no_margin}>Loading, wait some seconds...</p>
                 </td>
               </tr>

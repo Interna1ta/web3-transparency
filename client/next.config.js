@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  exportTrailingSlash: true,
+  // exportTrailingSlash: true,
   reactStrictMode: true,
 }
 
